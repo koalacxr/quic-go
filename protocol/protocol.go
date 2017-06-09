@@ -5,6 +5,9 @@ import "math"
 // A PacketNumber in QUIC
 type PacketNumber uint64
 
+// MaxPacketNumber is the maximum value of a PacketNumber
+const MaxPacketNumber = PacketNumber(math.MaxUint64)
+
 // PacketNumberLen is the length of the packet number in bytes
 type PacketNumberLen uint8
 
