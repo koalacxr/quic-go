@@ -24,7 +24,7 @@ var _ = Describe("Drop Proxy", func() {
 
 	runDropTest := func(dropCallback quicproxy.DropCallback, version protocol.VersionNumber) {
 		var err error
-		proxy, err = quicproxy.NewQuicProxy("localhost:0", quicproxy.Opts{
+		proxy, err = quicproxy.NewQuicProxy("localhost:0", version, quicproxy.Opts{
 			RemoteAddr: "localhost:" + port,
 			DropPacket: dropCallback,
 		})

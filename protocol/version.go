@@ -8,8 +8,10 @@ const (
 	Version35 VersionNumber = 35 + iota
 	Version36
 	Version37
+	Version39          VersionNumber = 39
 	VersionWhatever    VersionNumber = 0 // for when the version doesn't matter
 	VersionUnsupported VersionNumber = -1
+	VersionUnknown     VersionNumber = -2
 )
 
 // SupportedVersions lists the versions that the server supports

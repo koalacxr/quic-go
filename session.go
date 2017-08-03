@@ -837,3 +837,7 @@ func (s *session) LocalAddr() net.Addr {
 func (s *session) RemoteAddr() net.Addr {
 	return s.conn.RemoteAddr()
 }
+
+func (s *session) GetVersion() protocol.VersionNumber {
+	return s.version
+}
